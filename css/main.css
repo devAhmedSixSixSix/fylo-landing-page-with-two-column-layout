@@ -9,6 +9,7 @@
 
 body {
   font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
 }
 
 h2,
@@ -29,6 +30,10 @@ p {
   align-items: center;
   justify-content: space-between;
   gap: 100px;
+}
+
+.pointer{
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -68,19 +73,67 @@ p {
 
 /* end global rulse */
 
+/* start Animation */
+.fade-in {
+  opacity: 0;
+  transition: 350ms ease-in;
+}
+
+.fade-in.show {
+  opacity: 1;
+}
+
+.from-left{
+  opacity: 0;
+  transition: 400ms ease-in;
+  transform: translateX(-100px);
+}
+
+.from-left.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.nav-scroll {
+  background: #F6FBFF;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 11px;
+  transition: 500ms ease-in-out;
+  z-index: 9999;
+}
+
+@keyframes up-and-down {
+
+  0%,
+  100% {
+    top: 0;
+  }
+
+  50% {
+    top: -50px;
+  }
+}
+
+/* end Animation */
+
 /* start landing */
 
 .landing {
-  padding: 33px 0 200px;
+  padding: 0 0 200px;
 }
 
 .landing .nav {
   gap: 22px;
+  position: fixed;
+  width: 100%;
+  padding: 11px;
 }
 
-.landing .nav .links {
-  padding-bottom: 33px;
+.landing .nav img{
+  display: block;
 }
+
+
+
 
 @media (max-width: 991px) {
   .landing .nav .links {
@@ -94,7 +147,31 @@ p {
 }
 
 .landing .nav .links ul li {
-  padding-right: 22px;
+  margin-right: 22px;
+  position: relative;
+  overflow: hidden;
+  width: fit-content;
+}
+
+/*  */
+.landing .nav .links ul li::before {
+  content: "";
+  position: absolute;
+  background-color: #3065F8;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: -100%;
+  transition: 0.3s;
+}
+
+.landing .nav .links ul li:hover::before {
+  left: 0;
+}
+/*  */
+
+.landing .holder{
+  padding-top: 88px;
 }
 
 .landing .holder form input[type="email"] {
@@ -116,11 +193,14 @@ p {
   border-radius: 3px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 90%;
+  cursor: pointer;
 }
 
 .landing .holder > img {
   width: 50%;
   margin: auto;
+  position: relative;
+  animation: up-and-down linear 5s infinite;
 }
 
 @media (max-width: 991px) {
@@ -191,11 +271,14 @@ p {
   width: 50px;
   height: 50px;
   border-radius: 50%;
+    
 }
 
 .learn-more .container > img {
   width: 50%;
   margin: auto;
+  position: relative;
+    animation: up-and-down linear 5s infinite;
 }
 
 @media (max-width: 991px) {
@@ -245,6 +328,7 @@ p {
   background-color: hsl(224, 93%, 58%);
   border-radius: 3px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
 }
 
 @media (max-width: 991px) {
@@ -305,3 +389,9 @@ p {
   width: 22px;
 }
 /* end footer */
+
+.attribution {
+  background-color: black;
+  color: #fff;
+  padding: 11px;
+}
