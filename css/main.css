@@ -201,6 +201,7 @@ p {
   margin: auto;
   position: relative;
   animation: up-and-down linear 5s infinite;
+  z-index: -1;
 }
 
 @media (max-width: 991px) {
