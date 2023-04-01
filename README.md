@@ -3,7 +3,9 @@
  Welcome! 👋 Fylo landing page with two column layout.
 </h1>
 
-![Design preview for the Fylo landing page with two column layout](./design/desktop-preview.jpg)
+<p align="center">
+ ![Design preview for the Fylo landing page with two column layout](./design/desktop-preview.jpg)
+</p>
 
 ## About The Project
 The main challenge is to build out this landing page and get it looking as close to the design as possible with some animation and hover effect.
