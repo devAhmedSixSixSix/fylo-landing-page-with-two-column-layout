@@ -1,7 +1,7 @@
 
-<p align="center">
-# Welcome! 👋 Fylo landing page with two column layout
-</p>
+<h1 align="center">
+ Welcome! 👋 Fylo landing page with two column layout.
+</h1>
 
 ![Design preview for the Fylo landing page with two column layout](./design/desktop-preview.jpg)
 
