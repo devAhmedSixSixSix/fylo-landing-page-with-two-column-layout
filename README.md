@@ -22,7 +22,7 @@ Users should be able to:
  Flex Box
  Desktop-first workflow
  
-##What I learned
+## What I learned
 A great project to practice some basics of HTML, CSS and JavaScript.
 
 <h6 align="center">
