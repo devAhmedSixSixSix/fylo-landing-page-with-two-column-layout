@@ -4,7 +4,7 @@
 </h1>
 
 <p align="center">
- ![Design preview for the Fylo landing page with two column layout](./design/desktop-preview.jpg)
+ <img src="./design/desktop-preview.jpg"/>
 </p>
 
 ## About The Project
