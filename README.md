@@ -24,5 +24,6 @@ Users should be able to:
  
 ##What I learned
 A great project to practice some basics of HTML, CSS and JavaScript.
-
-**Thanks for checking out Have fun cOdErZ!** 🚀
+<p align="center">
+ **Thanks for checking out Have fun cOdErZ!** 🚀
+</p>
