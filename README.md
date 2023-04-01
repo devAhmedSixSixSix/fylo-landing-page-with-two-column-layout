@@ -1,4 +1,3 @@
-
 <h1 align="center">
  Welcome! 👋 Fylo landing page with two column layout.
 </h1>
